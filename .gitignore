@@ -1,0 +1,12 @@
+# Python virtual environment
+venv/
+
+# Compiled/optimized python files
+*.py[co]
+__pycache__
+
+# JetBrains
+.idea/
+
+# Secret credentials
+openbudget/credentials.py
