@@ -10,3 +10,6 @@ __pycache__
 
 # Secret credentials
 openbudget/credentials.py
+
+# SQLite database
+*.sqlite3
