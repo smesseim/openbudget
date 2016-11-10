@@ -18,6 +18,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^app/transactions/', include('transactions.appurls')),
     url(r'^api/auth/', include('rest_framework.urls')),
     url(r'^api/transactions/', include('transactions.urls')),
 ]
