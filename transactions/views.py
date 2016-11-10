@@ -1,3 +1,5 @@
+from django.shortcuts import render
+
 from rest_framework import generics, permissions
 
 from .models import Transaction
@@ -20,3 +22,7 @@ class TransactionDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Transaction.objects.all()
     serializer_class = TransactionSerializer
     permission_classes = (permissions.IsAuthenticated, IsOwner)
+
+
+def app(request):
+    return render(request, 'transactions/main.html')
