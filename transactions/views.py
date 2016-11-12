@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 
 from rest_framework import generics, permissions
@@ -24,5 +25,6 @@ class TransactionDetail(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = (permissions.IsAuthenticated, IsOwner)
 
 
+@login_required
 def app(request):
     return render(request, 'transactions/main.html')
