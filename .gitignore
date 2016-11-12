@@ -10,7 +10,7 @@ __pycache__
 
 # Secret credentials
 openbudget/credentials.py
-fixtures/sites.yml
+fixture_sites.yaml
 
 # SQLite database
 *.sqlite3

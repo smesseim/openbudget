@@ -50,7 +50,7 @@ args = vars(parser.parse_args())
 credentials_filepath = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                     'openbudget', 'credentials.py')
 fixture_filepath = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                'fixtures', 'sites.yml')
+                                'fixture_sites.yaml')
 chars = ''.join([string.ascii_letters, string.digits, string.punctuation]) \
     .replace('\'', '') \
     .replace('"', '') \

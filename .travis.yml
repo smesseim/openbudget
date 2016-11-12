@@ -4,6 +4,6 @@ python:
 install:
   - pip install -r requirements.txt
   - python config.py --debug
-  - python manage.py loaddata fixtures/sites.yml
+  - python manage.py loaddata fixture_sites.yaml
 script:
   - python manage.py test
